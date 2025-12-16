@@ -1,0 +1,31 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* 覆盖 Cayman 默认头部，使用稳重的深蓝 */
+.page-header {
+  background-image: linear-gradient(120deg, #182848, #4b6cb7); 
+  padding: 3rem 4rem;
+}
+
+/* 调整大标题字体 */
+.project-name {
+  font-family: "Georgia", serif; /* 使用衬线体，更具法律威严感 */
+  font-weight: bold;
+}
+
+/* 调整正文阅读体验 */
+.main-content {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* 调整按钮颜色为金色，突出行动点 */
+.btn {
+  background-color: #c5a059; /* 香槟金 */
+  border-color: #c5a059;
+  font-weight: 600;
+}
+.btn:hover {
+    background-color: #b08d4b;
+}
