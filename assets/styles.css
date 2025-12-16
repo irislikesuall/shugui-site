@@ -150,7 +150,7 @@ a:focus-visible {
 .hero__background {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(120deg, rgba(26, 86, 122, 0.35), rgba(11, 45, 74, 0.35)), url('assets/header.png');
+  background-image: linear-gradient(120deg, rgba(26, 86, 122, 0.35), rgba(11, 45, 74, 0.35)), url('header.png');
   background-size: cover;
   background-position: center;
   filter: saturate(0.95);
