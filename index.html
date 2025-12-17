@@ -1,365 +1,359 @@
-diff --git a/index.html b/index.html
-new file mode 100644
-index 0000000000000000000000000000000000000000..a4c8a0c44481b06b63f7f9858da30a679603a6d9
---- /dev/null
-+++ b/index.html
-@@ -0,0 +1,359 @@
-+<!DOCTYPE html>
-+<html lang="zh-Hans">
-+<head>
-+  <meta charset="UTF-8">
-+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-+  <title>Shugui Privacy / 数规坊</title>
-+  <link rel="stylesheet" href="assets/styles.css">
-+</head>
-+<body>
-+  <header class="site-header" aria-label="Primary">
-+    <div class="top-bar">
-+      <div class="top-bar__content container">
-+        <div class="top-bar__contact">
-+          <span aria-hidden="true">✉️</span>
-+          <a href="mailto:hello@shuguiprivacy.com">邮箱：hello@shuguiprivacy.com</a>
-+        </div>
-+        <div class="top-bar__contact">
-+          <span aria-hidden="true">📞</span>
-+          <a href="tel:+1234567890">电话：+1 (234) 567-890</a>
-+        </div>
-+        <div class="top-bar__contact">
-+          <span aria-hidden="true">💬</span>
-+          <span>微信：待添加</span>
-+        </div>
-+        <div class="top-bar__contact">
-+          <span aria-hidden="true">📰</span>
-+          <a href="#wechat">微信公众号</a>
-+        </div>
-+      </div>
-+    </div>
-+    <div class="nav-bar">
-+      <div class="nav-bar__content container">
-+        <div class="brand" aria-label="Shugui Privacy / 数规坊">
-+          <img src="assets/logo.png" alt="数规坊标志" class="brand__logo" />
-+          <span class="brand__title">Shugui Privacy / 数规坊</span>
-+        </div>
-+        <nav aria-label="Main navigation">
-+          <ul class="nav-links">
-+            <li><a href="#services">服务</a></li>
-+            <li><a href="#about">关于我们</a></li>
-+            <li><a href="#resources">资料与公众号</a></li>
-+            <li><a href="#testimonials">客户评价</a></li>
-+            <li><a href="#faq">常见问题</a></li>
-+            <li><a href="#contact">联系我们</a></li>
-+          </ul>
-+        </nav>
-+      </div>
-+    </div>
-+  </header>
-+
-+  <main class="page-content">
-+    <section class="hero" aria-labelledby="hero-title">
-+      <div class="hero__background" role="presentation"></div>
-+      <div class="hero__overlay"></div>
-+      <div class="hero__content container">
-+        <div class="hero__text-block" aria-label="GDPR 数据合规">
-+          <h1 id="hero-title">GDPR 数据合规</h1>
-+          <p class="hero__lead">以最必要的合规，实现最大的业务安心<br>Lean where possible, strong where necessary</p>
-+          <a class="button button--solid" href="#contact">联系我们</a>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section id="services" class="section section--light" aria-labelledby="services-title">
-+      <div class="container">
-+        <div class="section__header">
-+          <p class="eyebrow">我们提供什么</p>
-+          <h2 id="services-title">服务内容</h2>
-+          <p class="section__intro">企业版与个人版服务矩阵，覆盖诊断、交付、咨询与职业成长。</p>
-+        </div>
-+        <div class="service-group">
-+          <div class="service-group__header">企业版</div>
-+          <div class="card-grid card-grid--services">
-+            <article class="card service-card">
-+              <span class="card__label">企业版</span>
-+              <h3>GDPR 合规诊断与路线图</h3>
-+              <ul class="card__list">
-+                <li>GDPR 适用范围与角色梳理</li>
-+                <li>合规缺口（Gap）清单</li>
-+                <li>90天整改路线图</li>
-+                <li>管理层风险要点简报</li>
-+              </ul>
-+            </article>
-+            <article class="card service-card">
-+              <span class="card__label">企业版</span>
-+              <h3>GDPR 专项合规交付</h3>
-+              <ul class="card__list">
-+                <li>ROPA（Art.30）与数据流</li>
-+                <li>DPIA（Art.35）与缓解措施</li>
-+                <li>DPA/处理者条款（Art.28）</li>
-+                <li>透明度材料（Art.13/14）</li>
-+              </ul>
-+            </article>
-+            <article class="card service-card">
-+              <span class="card__label">企业版</span>
-+              <h3>持续 DPO 咨询支持</h3>
-+              <ul class="card__list">
-+                <li>文档与流程持续审阅</li>
-+                <li>业务场景答疑与会议支持</li>
-+                <li>培训宣导与合规意识建设</li>
-+                <li>合规监控与改进跟踪</li>
-+              </ul>
-+            </article>
-+          </div>
-+        </div>
-+        <div class="service-group">
-+          <div class="service-group__header">个人版</div>
-+          <div class="card-grid card-grid--services">
-+            <article class="card service-card">
-+              <span class="card__label">个人版</span>
-+              <h3>GDPR 理论知识系统梳理</h3>
-+              <ul class="card__list">
-+                <li>GDPR 框架与适用范围</li>
-+                <li>合法依据与边界</li>
-+                <li>角色判定与责任链</li>
-+                <li>ROPA/DPIA 核心逻辑</li>
-+              </ul>
-+            </article>
-+            <article class="card service-card">
-+              <span class="card__label">个人版</span>
-+              <h3>实战演练与模拟案例交付物</h3>
-+              <ul class="card__list">
-+                <li>场景拆解与答题逻辑训练</li>
-+                <li>ROPA/DPIA 等模拟交付物输出</li>
-+                <li>DPA 条款要点与风险识别</li>
-+                <li>泄露响应和主体请求演练</li>
-+              </ul>
-+            </article>
-+            <article class="card service-card">
-+              <span class="card__label">个人版</span>
-+              <h3>简历与求职建议</h3>
-+              <ul class="card__list">
-+                <li>简历定位与优化</li>
-+                <li>GDPR 交付物作品集</li>
-+                <li>面试准备与情景题演练</li>
-+                <li>入职后护航陪跑</li>
-+              </ul>
-+            </article>
-+          </div>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section id="about" class="section section--dark" aria-labelledby="about-title">
-+      <div class="container">
-+        <div class="section__header section__header--dark">
-+          <p class="eyebrow">关于我们</p>
-+          <h2 id="about-title">我们是谁</h2>
-+          <p class="section__intro">以“小而精”的形态，提供稳健且贴近业务的 GDPR 合规支持。</p>
-+        </div>
-+        <div class="about__body">
-+          <p>数规坊信息咨询工作室是一家专注于隐私与数据保护合规的精品型咨询机构，长期聚焦 GDPR、UK GDPR 等数据保护法规，提供合规咨询、交付物审阅与编写、内部合规体系搭建及定制化培训等服务。我们以“小而精”的团队形态运作，强调高专业度、高响应度与可落地的实务支持，为不同发展阶段的企业与科研机构提供稳定、持续的数据合规陪伴。</p>
-+          <p>团队成员由多位常驻欧洲、目前在职的一线隐私合规负责人组成（如 DPO 或同等岗位），覆盖医药与科研、互联网服务与技术平台、制造业等行业。成员普遍持有 ECPC-B（EU DPO）、CIPP/EU、CIPP/US 等国际认证，熟悉 GDPR 在不同行业场景下的具体适用与监管实践尺度，能够把法规要求转化为企业内部可执行的流程与文档体系。</p>
-+          <p>创始人拥有生物医药与药学交叉背景的博士学位，持有 ECPC-B（EU DPO）、CIPP/EU、CIPP/US 等多项国际认证，并参与多行业的数据保护项目实践，包括科研数据处理、跨境数据流动、平台类业务的数据保护实践与技术产品隐私设计等。依托科研训练与一线经验，能够快速理解不同业务模式，提供结构化、可执行、符合监管预期的合规方案。</p>
-+          <p>我们坚持实务导向：不交付停留在理论层面的研究报告，而是从真实业务出发，以数据流、流程与系统为切入点，拆解问题、梳理处理活动、审阅关键文档与机制，帮助客户逐步搭建经得起审计与监管问询的合规体系。我们强调“最小合规必要性”，基于 risk-based approach，在满足监管要求、降低核心风险的前提下，建立与企业资源、业务体量与技术成熟度相匹配的数据保护体系，避免不必要的流程堆叠与形式合规。</p>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section class="section section--light" aria-labelledby="why-title">
-+      <div class="container">
-+        <div class="section__header">
-+          <p class="eyebrow">我们的优势</p>
-+          <h2 id="why-title">为什么选择我们</h2>
-+          <p class="section__intro">紧贴监管、深耕行业、强调落地的 GDPR 合规伙伴。</p>
-+        </div>
-+        <div class="card-grid card-grid--why">
-+          <article class="card focus-card">
-+            <h3>顾问常驻欧洲</h3>
-+            <p>紧贴欧盟与英国监管环境与执法趋势</p>
-+          </article>
-+          <article class="card focus-card">
-+            <h3>实务导向、结果可落地</h3>
-+            <p>围绕具体项目与流程给出可执行方案</p>
-+          </article>
-+          <article class="card focus-card">
-+            <h3>行业理解深、覆盖面广</h3>
-+            <p>医药科研深度积累，同时可支持多行业场景</p>
-+          </article>
-+          <article class="card focus-card">
-+            <h3>稳健且敏捷</h3>
-+            <p>合规服务业务发展，为国际合作预留空间</p>
-+          </article>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section id="resources" class="section section--light" aria-labelledby="resources-title">
-+      <div class="container two-column">
-+        <div class="stack">
-+          <div class="section__header">
-+            <p class="eyebrow">资料与洞察</p>
-+            <h2 id="resources-title">文章与分享</h2>
-+            <p class="section__intro">精选 GDPR 与隐私合规相关文章、案例与方法论，持续更新。</p>
-+          </div>
-+          <ul class="post-list">
-+            <li class="post">
-+              <div>
-+                <p class="post__date">日期占位</p>
-+                <h3>文章标题占位</h3>
-+                <p class="post__excerpt">简介占位：用以介绍文章要点与阅读价值。</p>
-+              </div>
-+            </li>
-+            <li class="post">
-+              <div>
-+                <p class="post__date">日期占位</p>
-+                <h3>文章标题占位</h3>
-+                <p class="post__excerpt">简介占位：用以介绍文章要点与阅读价值。</p>
-+              </div>
-+            </li>
-+            <li class="post">
-+              <div>
-+                <p class="post__date">日期占位</p>
-+                <h3>文章标题占位</h3>
-+                <p class="post__excerpt">简介占位：用以介绍文章要点与阅读价值。</p>
-+              </div>
-+            </li>
-+          </ul>
-+        </div>
-+        <div id="wechat" class="wechat">
-+          <div class="section__header">
-+            <p class="eyebrow">公众号</p>
-+            <h2>微信公众号</h2>
-+            <p class="section__intro">扫码关注，获取最新案例、监管动态与实务要点。</p>
-+          </div>
-+          <div class="wechat__qr" aria-label="WeChat QR placeholder"></div>
-+          <a class="button button--ghost" href="#contact">咨询合作</a>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section id="testimonials" class="section section--light" aria-labelledby="testimonials-title">
-+      <div class="container">
-+        <div class="section__header">
-+          <p class="eyebrow">客户之声</p>
-+          <h2 id="testimonials-title">客户信赖之声</h2>
-+          <p class="section__intro">匿名引用，呈现不同行业客户对合作体验的反馈。</p>
-+        </div>
-+        <div class="testimonial-grid">
-+          <article class="testimonial-card">
-+            <p class="testimonial-card__quote">“占位引用：专业严谨，帮助团队厘清合规路径。”</p>
-+            <p class="testimonial-card__meta">匿名 · 科研机构</p>
-+          </article>
-+          <article class="testimonial-card">
-+            <p class="testimonial-card__quote">“占位引用：响应快，沟通清晰，决策更有底气。”</p>
-+            <p class="testimonial-card__meta">匿名 · 金融科技</p>
-+          </article>
-+          <article class="testimonial-card">
-+            <p class="testimonial-card__quote">“占位引用：熟悉监管期待，交付物细致可靠。”</p>
-+            <p class="testimonial-card__meta">匿名 · 医药制造</p>
-+          </article>
-+          <article class="testimonial-card">
-+            <p class="testimonial-card__quote">“占位引用：项目推进有节奏，方案能落地。”</p>
-+            <p class="testimonial-card__meta">匿名 · 出海互联网</p>
-+          </article>
-+          <article class="testimonial-card">
-+            <p class="testimonial-card__quote">“占位引用：培训易懂，团队快速建立共识。”</p>
-+            <p class="testimonial-card__meta">匿名 · SaaS 平台</p>
-+          </article>
-+          <article class="testimonial-card">
-+            <p class="testimonial-card__quote">“占位引用：稳健且灵活，适配不同业务节奏。”</p>
-+            <p class="testimonial-card__meta">匿名 · 教育科技</p>
-+          </article>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section id="faq" class="section section--light" aria-labelledby="faq-title">
-+      <div class="container">
-+        <div class="section__header">
-+          <p class="eyebrow">常见问题</p>
-+          <h2 id="faq-title">常见问答</h2>
-+          <p class="section__intro">关于 GDPR 合规支持方式、交付周期与合作模式的快速说明。</p>
-+        </div>
-+        <div class="accordion" role="list">
-+          <details class="accordion__item">
-+            <summary>GDPR 初次合规从何处开始？</summary>
-+            <div class="accordion__panel">通常从适用性与角色梳理入手，明确数据流、业务场景与责任链，再制定差距清单与整改路线图。</div>
-+          </details>
-+          <details class="accordion__item">
-+            <summary>需要哪些核心交付物？</summary>
-+            <div class="accordion__panel">常见交付物包括 ROPA、DPIA、DPA/处理者条款、透明度材料、培训与风险简报等，根据业务成熟度调整。</div>
-+          </details>
-+          <details class="accordion__item">
-+            <summary>合作周期与节奏如何安排？</summary>
-+            <div class="accordion__panel">诊断与路线图可在数周内完成，专项交付通常为 60-90 天，持续 DPO 支持按月或按项目节奏提供。</div>
-+          </details>
-+          <details class="accordion__item">
-+            <summary>是否支持远程与跨时区沟通？</summary>
-+            <div class="accordion__panel">团队常驻欧洲，可覆盖欧盟与英国工作时间，并可根据项目需求提供灵活的线上会议时段。</div>
-+          </details>
-+          <details class="accordion__item">
-+            <summary>内部团队如何参与？</summary>
-+            <div class="accordion__panel">我们鼓励多角色参与，结合培训、联合梳理与文档共建，帮助内部团队逐步接管与维护合规体系。</div>
-+          </details>
-+          <details class="accordion__item">
-+            <summary>是否提供紧急支持？</summary>
-+            <div class="accordion__panel">可根据需求安排快速响应，用于数据泄露、监管问询或重大业务上线前的风险评估与材料审阅。</div>
-+          </details>
-+          <details class="accordion__item">
-+            <summary>如何确认费用与范围？</summary>
-+            <div class="accordion__panel">会先与关键干系人明确范围与优先级，形成阶段性目标与报价，再进入交付阶段。</div>
-+          </details>
-+          <details class="accordion__item">
-+            <summary>是否支持培训与宣导？</summary>
-+            <div class="accordion__panel">提供定制化培训与宣导材料，结合典型业务场景与近期执法案例，让团队快速形成统一认知。</div>
-+          </details>
-+          <details class="accordion__item">
-+            <summary>交付完成后还有支持吗？</summary>
-+            <div class="accordion__panel">可选择持续 DPO 咨询支持，定期复盘与更新文档，陪伴团队应对新业务与监管变化。</div>
-+          </details>
-+          <details class="accordion__item">
-+            <summary>数据跨境与供应商管理如何覆盖？</summary>
-+            <div class="accordion__panel">会在数据映射与合同审阅中同步处理跨境与供应商管理议题，提供可执行的控制措施与模板。</div>
-+          </details>
-+        </div>
-+      </div>
-+    </section>
-+  </main>
-+
-+  <footer id="contact" class="footer" aria-label="Footer">
-+    <div class="container footer__grid">
-+      <div class="footer__col">
-+        <h3>联系我们</h3>
-+        <ul>
-+          <li>邮箱：hello@shuguiprivacy.com</li>
-+          <li>微信：待添加</li>
-+          <li>电话：+1 (234) 567-890</li>
-+        </ul>
-+      </div>
-+      <div class="footer__col">
-+        <h3>服务</h3>
-+        <ul>
-+          <li><a href="#services">企业版合规咨询</a></li>
-+          <li><a href="#services">个人版成长计划</a></li>
-+          <li><a href="#services">持续 DPO 支持</a></li>
-+        </ul>
-+      </div>
-+      <div class="footer__col">
-+        <h3>更多信息</h3>
-+        <ul>
-+          <li><a href="#resources">合规资料</a></li>
-+          <li><a href="#faq">常见问题</a></li>
-+          <li><a href="#contact">合作咨询</a></li>
-+        </ul>
-+      </div>
-+      <div class="footer__col">
-+        <h3>地区与渠道</h3>
-+        <ul>
-+          <li><a href="#wechat">微信公众号</a></li>
-+          <li><a href="#resources">文章更新</a></li>
-+          <li><a href="#contact">业务联络</a></li>
-+        </ul>
-+      </div>
-+    </div>
-+    <div class="footer__bottom">© 2024 Shugui Privacy / 数规坊. 版权所有。</div>
-+  </footer>
-+</body>
-+</html>
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shugui Privacy / 数规坊</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header" aria-label="Primary">
+    <div class="top-bar">
+      <div class="top-bar__content container">
+        <div class="top-bar__contact">
+          <span aria-hidden="true">✉️</span>
+          <a href="mailto:hello@shuguiprivacy.com">邮箱：hello@shuguiprivacy.com</a>
+        </div>
+        <div class="top-bar__contact">
+          <span aria-hidden="true">📞</span>
+          <a href="tel:1234567890">电话：1 (234) 567-890</a>
+        </div>
+        <div class="top-bar__contact">
+          <span aria-hidden="true">💬</span>
+          <span>微信：待添加</span>
+        </div>
+        <div class="top-bar__contact">
+          <span aria-hidden="true">📰</span>
+          <a href="#wechat">微信公众号</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <div class="nav-bar__content container">
+        <div class="brand" aria-label="Shugui Privacy / 数规坊">
+          <img src="assets/logo.png" alt="数规坊标志" class="brand__logo" />
+          <span class="brand__title">Shugui Privacy / 数规坊</span>
+        </div>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="#services">服务</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#resources">资料与公众号</a></li>
+            <li><a href="#testimonials">客户评价</a></li>
+            <li><a href="#faq">常见问题</a></li>
+            <li><a href="#contact">联系我们</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__background" role="presentation"></div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <div class="hero__text-block" aria-label="GDPR 数据合规">
+          <h1 id="hero-title">GDPR 数据合规</h1>
+          <p class="hero__lead">以最必要的合规，实现最大的业务安心<br>Lean where possible, strong where necessary</p>
+          <a class="button button--solid" href="#contact">联系我们</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section--light" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">我们提供什么</p>
+          <h2 id="services-title">服务内容</h2>
+          <p class="section__intro">企业版与个人版服务矩阵，覆盖诊断、交付、咨询与职业成长。</p>
+        </div>
+        <div class="service-group">
+          <div class="service-group__header">企业版</div>
+          <div class="card-grid card-grid--services">
+            <article class="card service-card">
+              <span class="card__label">企业版</span>
+              <h3>GDPR 合规诊断与路线图</h3>
+              <ul class="card__list">
+                <li>GDPR 适用范围与角色梳理</li>
+                <li>合规缺口（Gap）清单</li>
+                <li>90天整改路线图</li>
+                <li>管理层风险要点简报</li>
+              </ul>
+            </article>
+            <article class="card service-card">
+              <span class="card__label">企业版</span>
+              <h3>GDPR 专项合规交付</h3>
+              <ul class="card__list">
+                <li>ROPA（Art.30）与数据流</li>
+                <li>DPIA（Art.35）与缓解措施</li>
+                <li>DPA/处理者条款（Art.28）</li>
+                <li>透明度材料（Art.13/14）</li>
+              </ul>
+            </article>
+            <article class="card service-card">
+              <span class="card__label">企业版</span>
+              <h3>持续 DPO 咨询支持</h3>
+              <ul class="card__list">
+                <li>文档与流程持续审阅</li>
+                <li>业务场景答疑与会议支持</li>
+                <li>培训宣导与合规意识建设</li>
+                <li>合规监控与改进跟踪</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+        <div class="service-group">
+          <div class="service-group__header">个人版</div>
+          <div class="card-grid card-grid--services">
+            <article class="card service-card">
+              <span class="card__label">个人版</span>
+              <h3>GDPR 理论知识系统梳理</h3>
+              <ul class="card__list">
+                <li>GDPR 框架与适用范围</li>
+                <li>合法依据与边界</li>
+                <li>角色判定与责任链</li>
+                <li>ROPA/DPIA 核心逻辑</li>
+              </ul>
+            </article>
+            <article class="card service-card">
+              <span class="card__label">个人版</span>
+              <h3>实战演练与模拟案例交付物</h3>
+              <ul class="card__list">
+                <li>场景拆解与答题逻辑训练</li>
+                <li>ROPA/DPIA 等模拟交付物输出</li>
+                <li>DPA 条款要点与风险识别</li>
+                <li>泄露响应和主体请求演练</li>
+              </ul>
+            </article>
+            <article class="card service-card">
+              <span class="card__label">个人版</span>
+              <h3>简历与求职建议</h3>
+              <ul class="card__list">
+                <li>简历定位与优化</li>
+                <li>GDPR 交付物作品集</li>
+                <li>面试准备与情景题演练</li>
+                <li>入职后护航陪跑</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section--dark" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section__header section__header--dark">
+          <p class="eyebrow">关于我们</p>
+          <h2 id="about-title">我们是谁</h2>
+          <p class="section__intro">以“小而精”的形态，提供稳健且贴近业务的 GDPR 合规支持。</p>
+        </div>
+        <div class="about__body">
+          <p>数规坊信息咨询工作室是一家专注于隐私与数据保护合规的精品型咨询机构，长期聚焦 GDPR、UK GDPR 等数据保护法规，提供合规咨询、交付物审阅与编写、内部合规体系搭建及定制化培训等服务。我们以“小而精”的团队形态运作，强调高专业度、高响应度与可落地的实务支持，为不同发展阶段的企业与科研机构提供稳定、持续的数据合规陪伴。</p>
+          <p>团队成员由多位常驻欧洲、目前在职的一线隐私合规负责人组成（如 DPO 或同等岗位），覆盖医药与科研、互联网服务与技术平台、制造业等行业。成员普遍持有 ECPC-B（EU DPO）、CIPP/EU、CIPP/US 等国际认证，熟悉 GDPR 在不同行业场景下的具体适用与监管实践尺度，能够把法规要求转化为企业内部可执行的流程与文档体系。</p>
+          <p>创始人拥有生物医药与药学交叉背景的博士学位，持有 ECPC-B（EU DPO）、CIPP/EU、CIPP/US 等多项国际认证，并参与多行业的数据保护项目实践，包括科研数据处理、跨境数据流动、平台类业务的数据保护实践与技术产品隐私设计等。依托科研训练与一线经验，能够快速理解不同业务模式，提供结构化、可执行、符合监管预期的合规方案。</p>
+          <p>我们坚持实务导向：不交付停留在理论层面的研究报告，而是从真实业务出发，以数据流、流程与系统为切入点，拆解问题、梳理处理活动、审阅关键文档与机制，帮助客户逐步搭建经得起审计与监管问询的合规体系。我们强调“最小合规必要性”，基于 risk-based approach，在满足监管要求、降低核心风险的前提下，建立与企业资源、业务体量与技术成熟度相匹配的数据保护体系，避免不必要的流程堆叠与形式合规。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">我们的优势</p>
+          <h2 id="why-title">为什么选择我们</h2>
+          <p class="section__intro">紧贴监管、深耕行业、强调落地的 GDPR 合规伙伴。</p>
+        </div>
+        <div class="card-grid card-grid--why">
+          <article class="card focus-card">
+            <h3>顾问常驻欧洲</h3>
+            <p>紧贴欧盟与英国监管环境与执法趋势</p>
+          </article>
+          <article class="card focus-card">
+            <h3>实务导向、结果可落地</h3>
+            <p>围绕具体项目与流程给出可执行方案</p>
+          </article>
+          <article class="card focus-card">
+            <h3>行业理解深、覆盖面广</h3>
+            <p>医药科研深度积累，同时可支持多行业场景</p>
+          </article>
+          <article class="card focus-card">
+            <h3>稳健且敏捷</h3>
+            <p>合规服务业务发展，为国际合作预留空间</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section section--light" aria-labelledby="resources-title">
+      <div class="container two-column">
+        <div class="stack">
+          <div class="section__header">
+            <p class="eyebrow">资料与洞察</p>
+            <h2 id="resources-title">文章与分享</h2>
+            <p class="section__intro">精选 GDPR 与隐私合规相关文章、案例与方法论，持续更新。</p>
+          </div>
+          <ul class="post-list">
+            <li class="post">
+              <div>
+                <p class="post__date">日期占位</p>
+                <h3>文章标题占位</h3>
+                <p class="post__excerpt">简介占位：用以介绍文章要点与阅读价值。</p>
+              </div>
+            </li>
+            <li class="post">
+              <div>
+                <p class="post__date">日期占位</p>
+                <h3>文章标题占位</h3>
+                <p class="post__excerpt">简介占位：用以介绍文章要点与阅读价值。</p>
+              </div>
+            </li>
+            <li class="post">
+              <div>
+                <p class="post__date">日期占位</p>
+                <h3>文章标题占位</h3>
+                <p class="post__excerpt">简介占位：用以介绍文章要点与阅读价值。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="wechat" class="wechat">
+          <div class="section__header">
+            <p class="eyebrow">公众号</p>
+            <h2>微信公众号</h2>
+            <p class="section__intro">扫码关注，获取最新案例、监管动态与实务要点。</p>
+          </div>
+          <div class="wechat__qr" aria-label="WeChat QR placeholder"></div>
+          <a class="button button--ghost" href="#contact">咨询合作</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section section--light" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">客户之声</p>
+          <h2 id="testimonials-title">客户信赖之声</h2>
+          <p class="section__intro">匿名引用，呈现不同行业客户对合作体验的反馈。</p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p class="testimonial-card__quote">“占位引用：专业严谨，帮助团队厘清合规路径。”</p>
+            <p class="testimonial-card__meta">匿名 · 科研机构</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-card__quote">“占位引用：响应快，沟通清晰，决策更有底气。”</p>
+            <p class="testimonial-card__meta">匿名 · 金融科技</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-card__quote">“占位引用：熟悉监管期待，交付物细致可靠。”</p>
+            <p class="testimonial-card__meta">匿名 · 医药制造</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-card__quote">“占位引用：项目推进有节奏，方案能落地。”</p>
+            <p class="testimonial-card__meta">匿名 · 出海互联网</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-card__quote">“占位引用：培训易懂，团队快速建立共识。”</p>
+            <p class="testimonial-card__meta">匿名 · SaaS 平台</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-card__quote">“占位引用：稳健且灵活，适配不同业务节奏。”</p>
+            <p class="testimonial-card__meta">匿名 · 教育科技</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--light" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">常见问题</p>
+          <h2 id="faq-title">常见问答</h2>
+          <p class="section__intro">关于 GDPR 合规支持方式、交付周期与合作模式的快速说明。</p>
+        </div>
+        <div class="accordion" role="list">
+          <details class="accordion__item">
+            <summary>GDPR 初次合规从何处开始？</summary>
+            <div class="accordion__panel">通常从适用性与角色梳理入手，明确数据流、业务场景与责任链，再制定差距清单与整改路线图。</div>
+          </details>
+          <details class="accordion__item">
+            <summary>需要哪些核心交付物？</summary>
+            <div class="accordion__panel">常见交付物包括 ROPA、DPIA、DPA/处理者条款、透明度材料、培训与风险简报等，根据业务成熟度调整。</div>
+          </details>
+          <details class="accordion__item">
+            <summary>合作周期与节奏如何安排？</summary>
+            <div class="accordion__panel">诊断与路线图可在数周内完成，专项交付通常为 60-90 天，持续 DPO 支持按月或按项目节奏提供。</div>
+          </details>
+          <details class="accordion__item">
+            <summary>是否支持远程与跨时区沟通？</summary>
+            <div class="accordion__panel">团队常驻欧洲，可覆盖欧盟与英国工作时间，并可根据项目需求提供灵活的线上会议时段。</div>
+          </details>
+          <details class="accordion__item">
+            <summary>内部团队如何参与？</summary>
+            <div class="accordion__panel">我们鼓励多角色参与，结合培训、联合梳理与文档共建，帮助内部团队逐步接管与维护合规体系。</div>
+          </details>
+          <details class="accordion__item">
+            <summary>是否提供紧急支持？</summary>
+            <div class="accordion__panel">可根据需求安排快速响应，用于数据泄露、监管问询或重大业务上线前的风险评估与材料审阅。</div>
+          </details>
+          <details class="accordion__item">
+            <summary>如何确认费用与范围？</summary>
+            <div class="accordion__panel">会先与关键干系人明确范围与优先级，形成阶段性目标与报价，再进入交付阶段。</div>
+          </details>
+          <details class="accordion__item">
+            <summary>是否支持培训与宣导？</summary>
+            <div class="accordion__panel">提供定制化培训与宣导材料，结合典型业务场景与近期执法案例，让团队快速形成统一认知。</div>
+          </details>
+          <details class="accordion__item">
+            <summary>交付完成后还有支持吗？</summary>
+            <div class="accordion__panel">可选择持续 DPO 咨询支持，定期复盘与更新文档，陪伴团队应对新业务与监管变化。</div>
+          </details>
+          <details class="accordion__item">
+            <summary>数据跨境与供应商管理如何覆盖？</summary>
+            <div class="accordion__panel">会在数据映射与合同审阅中同步处理跨境与供应商管理议题，提供可执行的控制措施与模板。</div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer" aria-label="Footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <h3>联系我们</h3>
+        <ul>
+          <li>邮箱：hello@shuguiprivacy.com</li>
+          <li>微信：待添加</li>
+          <li>电话：1 (234) 567-890</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>服务</h3>
+        <ul>
+          <li><a href="#services">企业版合规咨询</a></li>
+          <li><a href="#services">个人版成长计划</a></li>
+          <li><a href="#services">持续 DPO 支持</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>更多信息</h3>
+        <ul>
+          <li><a href="#resources">合规资料</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#contact">合作咨询</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>地区与渠道</h3>
+        <ul>
+          <li><a href="#wechat">微信公众号</a></li>
+          <li><a href="#resources">文章更新</a></li>
+          <li><a href="#contact">业务联络</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2024 Shugui Privacy / 数规坊. 版权所有。</div>
+  </footer>
+</body>
+</html>
